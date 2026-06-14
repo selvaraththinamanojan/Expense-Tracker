@@ -21,5 +21,5 @@ function handleLogin() {
     }
 
     localStorage.setItem('loggedUser', username);
-    window.location.href = '../Pages/home.html';
+    window.location.href = 'home.html';
 }
