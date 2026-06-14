@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Baskerville Old Face;
+    background: linear-gradient(135deg, #65ebf5 0%, #ffffff 50%, #f82665 );
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+nav {
+    background: white;
+    border-radius: 18px;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-hed {
+    font-size: 22px;
+    font-weight: 700;
+    color: #7b5ea7;
+    letter-spacing: 1px;
+}
+
+.logo-box {
+   background: linear-gradient(to right bottom, #00d4ff, #7b5ea7);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+    font-family: "Cooper Black";
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 25px;
+    font-weight: 800;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.user-profile {
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-family: "Amasis MT Pro Black";
+    font-size: 24px;
+    font-weight: 600;
+    color: #7b5ea7;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.user-profile:hover {
+    opacity: 0.85;
+    color: #7041b8;
+}
+
+.logout-btn {
+    background: #f81358;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.logout-btn:hover {
+    opacity: 1;
+}

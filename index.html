@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Expense Tracker</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login-box">
+            <div class="logo">
+                <div class="logo-box">ET</div>
+                <div class="logo-hed">Expense Tracker</div>
+            </div>
+            <p class="login-sub-hed">| Welcome back! Please login.</p>
+            <div class="input-item">
+                <label>| Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <span class="error" id="username-error"></span>
+            </div>
+            <div class="input-item">
+                <label>| Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <span class="error" id="password-error"></span>
+            </div>
+            <button class="login-btn" onclick="handleLogin()">Login</button>
+        </div>
+    </div>
+    <script src="../Js/index.js"></script>
+</body>
+</html>

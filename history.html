@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense_Tracker-History</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-box">ET</div>
+            <div class="logo-hed">Expense Tracker</div>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+        <div class="user-profile">Wel Come <span id="nav-username"></span></div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+    <div class="history-box">
+        <div class="history-box-heading">
+            <p class="history">| History</p>
+            <h1 id="history-title">Transactions</h1>
+        </div>
+        <div class="count-item" id="transactionCount">0 </div>
+
+        <button class="btn" id="clear-btn" onclick="clearAll()">clear All</button>
+    </div>
+
+
+    <div class="history-box" id="history-box-id">
+        <div class="filter-btn">
+            <button id="btn-all" class="filter-active" onclick="filterTransactions('all')">All</button>
+            <button id="btn-income" onclick="filterTransactions('income')">Income</button>
+            <button id="btn-expense" onclick="filterTransactions('expense')">Expense</button>
+        </div>
+        <hr>
+        <ul class="transaction-list" id="transactionList" aria-live="polite"></ul>
+    </div>
+    <div class="history-box" id="emptyState">
+        <div class="empty-icon" aria-hidden="true">
+            <h3>No transactions yet</h3>
+            <p>Add your first income or expense to begin tracking your balance.</p>
+        </div>
+    </div>
+
+    <script src="../Js/history.js"></script>
+</body>
+
+</html>
